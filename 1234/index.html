@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, inital-scale=1.0">
+        <title>EMIRATE UNIVERSITY Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img height="50" width="50" src="logo.jpg">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#cour">Course</a></li>
+                        <li><a href="http://localhost/lms/">Library</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="logout.php">Log Out</a></li>
+ 
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <div class="text-box">
+                
+                <h1>EMIRATE UNIVERSITY</h1>
+                <p>We believe there is nothing more important than education
+                </p>
+                <a href="https://www.google.com/maps/place/D.+Y.+Patil+International+University/@18.586844,73.7419909,12z/data=!4m12!1m6!3m5!1s0x0:0x9bccd5081468bc36!2sDr.+D.+Y.+Patil+Institute+of+Technology!8m2!3d18.6230833!4d73.8160199!3m4!1s0x0:0x994b7c247d09fde!8m2!3d18.6459923!4d73.7592455" class="hero-btn">Visit us to know more</a>
+            </div>
+        </section>
+        <!-------------course------------>
+        <section class="course" id="cour">
+            <h1>Courses we offer</h1>
+            <p>Learn under top University </p>
+
+            <div class="row">
+                
+                <div class="course-col" >
+                    <a href="ug.html"><h3>Undergraduate (UG) </h3></a>
+                    <p>UG course is generally three or four years programme that is done after completing class 12th.
+                    </p>
+                </div>
+                
+                <div class="course-col">
+                    <a href="pg.html"><h3>Postgraduate (PG)</h3></a>
+                    <p>Postgraduate which is generally for one or two years. To be eligible for postgraduate programmes, candidates must have obtained Bachelor degree.
+                    </p>
+                </div>
+                <div class="course-col">
+                    <a href="phd.html"><h3>PhD</h3></a>
+                    <p>A PhD course is usually of three years duration and candidates need to complete the course within a maximum time span of five to six years.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-------campus------>
+        <section class="campus">
+            <h1>Our campus</h1>
+            <p>Our campus is one of the most beautiful in the world with numerous teaching and study spaces, bars and cafés, high-quality accommodation, and sports</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img  height="500" src="london.jpg">
+                     <div class="layer">
+                        <h3>PUNE</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img height="500" src="pune.jpg">
+                     <div class="layer">
+                        <h3>Mumbai</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img height="500" src="mumbai.jpg">
+                     <div class="layer">
+                        <h3>Delhi</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-------facilities------>
+        <section class="facilities">
+            <h1>Our Facilities</h1> 
+            <p>A few of the facilities provided by the college are shown below</p>
+            <div class="row">
+                <div class="fac-col">
+                    <img  height="500" src="library.jpg">
+                        <h3>World Class Library</h3>
+                        <p>An academic library is a library that is attached to a higher education institution and serves two complementary purposes: to support the curriculum, and to support the research of the university faculty and students.</p>
+                </div>
+                <div class="fac-col">
+                    <img height="500" src="canteen.jpg">
+                        <h3>Tasty and healthy food</h3>
+                        <p>The canteen is located inside the College. The hostellers and day scholars are provided meals by assuring food safety and quality.</p>
+                </div>
+                <div class="fac-col">
+                    <img height="500" src="ground.jpg">
+                        <h3>Sports Ground</h3>
+                        <p>College athletics encompasses non-professional, collegiate and university-level competitive sports and games. </p>
+                </div>
+            </div>
+        </section>
+        <!---------testimonails------>
+        <section class="testimonials">
+            <h1>What Our Studenst Says</h1> 
+            <p>Here about your college from your own Alumni.</p>
+            <div class="row">
+                <div class="testi-col">
+                    <img src="london.jpg">
+                    <div>
+                        <p>Placement is 100% in our college.the guidelines is great In my college upto 98%students get placed every year.the highest pacakge this year is 10lakhs from EEE ,and average pacakge like 6lakhs pacakges. In palcements my college always tops 1st position.i think very well developing skills are providing to students.</p>
+                        <h3>Tejas Thorat</h3>
+                    </div>
+                </div>
+                <div class="testi-col">
+                    <img src="pune.jpg">
+                    <div>
+                        <p>Campus is so open. It is not a closed area. Outside the building we have a pond side. The environment is very good, For this reason I guess campus life is also better than other colleges. Students and teachers both are very friendly.</p>
+                        <h3>Akshay Wagh</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------call to action----->
+        <section class="cts">
+            <h1>Enroll for Our Various Online Coursesb <br> Anywhere From the World</h1>
+            <a href="contact.html" class="hero-btn">Conatct Us</a>
+        </section>
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showmenu(){
+                navLinks.style.right="0";
+            }
+            function hidemenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
